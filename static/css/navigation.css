@@ -1,0 +1,100 @@
+@import url("https://use.typekit.net/rig3fih.css");
+
+#navbar {
+  background-color: #B2A89F;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 1;
+}
+
+/* Ze Tan + menu */
+.title-headline {
+  margin: 20px 0 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.ze-blkcls {
+  font-size: 16px;
+  padding-left: 20px;
+  font-family: termina,sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.ze-blkcls a {
+  text-decoration: none;
+  color: #161616;
+}
+
+.ze-blkcls a:hover {
+  cursor: pointer;
+  color: #F06A00;
+}
+
+/* menu text */
+div > .menu-cls {
+  text-decoration: none;
+  color: #B2A89F;
+}
+
+/* icon-menu show */
+.menu {
+  padding-top: 7px;
+  padding-right: 25px;
+  width: 26px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.menu-cls a {
+  display: none;
+}
+
+.menu-cls a.icon {
+  display: block;
+}
+
+/* tablet version */
+@media only screen and (min-width: 750px) {
+  
+  /* Ze Tan + menu */
+  .title-headline {
+    margin: 20px 20px 10px;
+  }
+
+  .ze-blkcls {
+    padding-left: 0px;
+  }
+
+  /* menu icon hide */
+  .menu {
+    display: none;
+  }
+
+  /* menu items show */
+  .menu-cls a {
+    display: inline-block;
+    color: #161616;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: termina,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    opacity: 1;
+  }
+
+  .menu-cls a:nth-child(3) {
+    padding-right: 0px;
+  }
+
+  .menu-cls a:hover {
+    color: #F06A00;
+  }
+}

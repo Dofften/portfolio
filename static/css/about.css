@@ -1,0 +1,191 @@
+@import url("https://use.typekit.net/rig3fih.css");
+
+.about-title {
+  font-size: clamp(33px, 5vw, 75px);
+  font-family: termina, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  padding: 100px 20px 20px;
+  text-transform: uppercase;
+}
+
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0s;
+}
+
+.about-pic {
+  border-left: 20px solid #B2A89F;
+  border-right: 20px solid #B2A89F;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 10px 20px 20px;
+  line-height: 22px;
+  font-family: termina,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  color: #161616;
+}
+
+
+/* email block */
+.about-email {
+  display: flex;
+  padding: 0px 20px 0px;
+  align-items: center;
+}
+
+.emailaddr {
+  font-family: termina,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.copy-icon {
+  display: none;
+}
+
+.copyimg {
+  cursor: pointer;
+  width: 50%;
+}
+
+.copy-icon .tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: #161616;
+  color: #B2A89F;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 0;
+  margin-left: -85px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.copy-icon .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #161616 transparent transparent transparent;
+}
+
+.tooltiptext {
+  font-family: termina, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10px;
+}
+
+.copy-icon:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cv {
+  padding: 0px 20px 0px;
+  font-size: 14px;
+  font-family: termina,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 38px;
+}
+
+.cv_a {
+  color: #161616; 
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cv_a:hover {
+  color: #F06A00;
+}
+
+.footer {
+  padding-top: 100px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Tablet+ version layout. */
+@media only screen and (min-width: 750px) {
+  .about-cls {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-title {
+    padding: 100px 0 20px;
+  }
+
+  .about-pic {
+    border-right: 0;
+  }
+
+  p {
+    padding: 0px;
+    margin: 0px;
+    width: 55%;
+    font-size: clamp(14px, 1.2vw, 1.1em);
+    line-height: clamp(26px, 2.4vw, 38px);
+  }
+
+  .about-email {
+    padding: 20px 0px 0px;
+  }
+
+  .emailaddr {
+    font-size: clamp(14px, 1.2vw, 1.1em);
+    line-height: clamp(26px, 2.4vw, 38px);
+  }
+
+  .copy-icon {
+    position: relative;
+    display: inline-block;
+  }
+
+  .copy-icon .tooltiptext {
+    width: 240px;
+    left: 0;
+    margin-left: -75px;
+  }
+
+  .cv {
+    font-size: clamp(14px, 1.2vw, 1.1em);
+    line-height: clamp(26px, 2.4vw, 38px);
+    padding: 0px;
+  }
+
+  .about-pic {
+    width: 38%;
+    float: right;
+  }
+}
+
+/* Desktop version for picture layout. */
+@media only screen and (min-width: 1000px) {
+  p {
+    padding-top: 0px;
+    margin: 0px;
+  }
+
+  .about-email {
+    padding: 20px 0px 0px;
+  }
+}
+

@@ -1,0 +1,126 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
+    <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:title" content="Frank Omondi Portfolio Website" />
+
+    <meta charset="utf-8" />
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/structure.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navigation.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/optionpage.css' %}" />
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <script
+      type="text/javascript"
+      src="{% static 'js/jquery-3.3.1.min.js' %}"
+    ></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <div id="bgId" class="bg-wrapper">
+      <div id="navbar">
+        <div class="title-headline">
+          <div id="zeId-blk" class="ze-blkcls">
+            <a href="/">Frank Omondi</a>
+          </div>
+          <div class="menu-cls" id="topnav">
+            <a class="project" href="/projects">PROJECTS</a>
+            <a
+              class="project"
+              href="https://drive.google.com/file/d/18V3eMqM-FEn4K0GzLkWbDFZ9UdMuBakp/view?usp=sharing"
+              target="_blank"
+              >RESUME</a
+            >
+            <a href="javascript:void(0);" class="icon">
+              <img
+                id="myMenu"
+                class="menu"
+                src="{% static 'images/menu-icon.png' %}"
+                alt="menu"
+                onclick="showOptions(this.id)"
+                style="cursor: pointer"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-cls">
+        <div class="about-title">about</div>
+        <img
+          class="about-pic"
+          src="{% static 'images/me.png' %}"
+          alt="myphoto"
+        />
+        <p class="">
+          Hi, I’m Frank, a full stack developer with vast knowledge in python
+          programming, web frameworks like django and flask, data science,
+          Reactjs and ReactNative.
+        </p>
+        <div class="about-email">
+          <div id="myEmail" class="emailaddr">frankomondi311@gmail.com</div>
+          <div class="copy-icon" onclick="copyEmail()" onmouseout="outFunc()">
+            <img
+              class="copyimg"
+              src="{% static 'images/copy.png' %}"
+              alt="aboutme"
+            />
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="social-media">
+          <!-- <a
+            class="insta"
+            href="https://www.instagram.com/dofften"
+            target="_blank"
+            >Instagram</a
+          > -->
+          <a class="insta" href="https://github.com/Dofften" target="_blank"
+            >Github</a
+          >
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/in/frederick-omondi-8643821b9/"
+            target="_blank"
+            >Linkedin</a
+          >
+          <!-- <a class="behance" href="https://twitter.com/dofften" target="_blank"
+            >Twitter</a
+          > -->
+        </div>
+        <div class="zeright">&copy;Dofften 2022</div>
+      </div>
+    </div>
+
+    <div id="optionpage" class="optionpage-cls">
+      <div class="close-cls">
+        <img
+          id="closeId"
+          class="close-img"
+          src="{% static 'images/close-icon.png' %}"
+          onclick="closeOptions(this.id)"
+        />
+      </div>
+
+      <div class="option-title">
+        <a class="project" href="/projects">PROJECTS</a>
+        <a class="about" href="/about">ABOUT</a>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/gsap.js' %}"></script>
+  </body>
+</html>

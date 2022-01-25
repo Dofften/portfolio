@@ -1,0 +1,41 @@
+@import url("https://use.typekit.net/rig3fih.css");
+
+/* menu option page */
+.optionpage-cls {
+  /* color: #161616; */
+  background-color: #161616;
+  width: inherit;
+  height: 100%;
+  display: none;
+}
+
+.close-cls {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.option-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: space-between;
+  margin-top: 144px;
+  font-family: termina, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.option-title > a {
+  color: #B2A89F;
+  text-decoration: none;
+}
+
+.close-img {
+  cursor: pointer; 
+  width: 25px;
+  height: 25px;
+}

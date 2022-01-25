@@ -1,0 +1,609 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
+
+    <meta property="og:title" content="Frank Omondi Portfolio Website" />
+
+    <meta charset="utf-8" />
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/structure.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/project.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navigation.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/optionpage.css' %}" />
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="{% static 'js/jquery-3.3.1.min.js' %}"
+    ></script>
+    <div id="bgId" class="bg-wrapper">
+      <div id="navbar">
+        <div class="title-headline">
+          <div id="zeId-blk" class="ze-blkcls">
+            <a href="/">Frank Omondi</a>
+          </div>
+          <div class="menu-cls" id="topnav">
+            <a class="about" href="/about">ABOUT</a>
+            <a
+              class="about"
+              href="https://drive.google.com/file/d/18V3eMqM-FEn4K0GzLkWbDFZ9UdMuBakp/view?usp=sharing"
+              target="_blank"
+              >RESUME</a
+            >
+            <a href="javascript:void(0);" class="icon">
+              <img
+                id="myMenu"
+                class="menu"
+                src="{% static 'images/menu-icon.png' %}"
+                alt="menu"
+                onclick="showOptions(this.id)"
+                style="cursor: pointer"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="projectId" class="project-cls">
+        <div id="pid1" class="pcls1 project-gap filter_item web digital">
+          <div class="title">FPL Data Analysis Project</div>
+          <div class="sub-blk">
+            <img class="slash" src="{% static 'images/line.svg' %}" />
+            <div class="project-font">
+              <div>Fantasy Premier League</div>
+              <div>Machine Learning</div>
+              <div>Data Analysis & Prediction</div>
+            </div>
+          </div>
+          <a href="/projects/fpl">
+            <img
+              id="p1-img-id"
+              class="img-cls"
+              src="{% static 'images/fpl.png' %}"
+              alt="fpl analysis"
+            />
+          </a>
+          <div class="expland-blk" style="padding-top: 15px">
+            <!-- <img id="expandId1" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)"> -->
+            <div class="project-font">Tap Image to Explore</div>
+          </div>
+        </div>
+        <div id="pid2" class="pcls4 project-gap filter_item digital">
+          <div class="title">Final Year Project</div>
+          <div class="sub-blk">
+            <img class="slash" src="{% static 'images/line.svg' %}" />
+            <div class="project-font">
+              <div>Online Exams</div>
+              <div>Data Analytics</div>
+              <div>Data Visualization</div>
+            </div>
+          </div>
+          <a href="https://dofften.pythonanywhere.com">
+            <img
+              id="p4-img-id"
+              class="img-cls"
+              src="{% static 'images/LOAS.png' %}"
+              alt="LOAS"
+            />
+          </a>
+          <div class="expland-blk" style="padding-top: 15px">
+            <!-- <img id="expandId2" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)"> -->
+            <div class="project-font">Tap Image to Explore</div>
+          </div>
+        </div>
+        <div id="pid3" class="pcls5 project-gap filter_item digital">
+          <div class="title">Youtube Developer API</div>
+          <div class="sub-blk">
+            <img class="slash" src="{% static 'images/line.svg' %}" />
+            <div class="project-font">
+              <div>Dynamic Title</div>
+              <div>Dynamic Thumbnail</div>
+              <div>Update With Views & Likes</div>
+            </div>
+          </div>
+          <a href="https://www.youtube.com/watch?v=FPSaniNy7W8">
+            <img
+              id="p5-img-id"
+              class="img-cls"
+              src="{% static 'images/youtube.png' %}"
+              alt="youtube api"
+            />
+          </a>
+          <div class="expland-blk" style="padding-top: 15px">
+            <!-- <img id="expandId3" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)"> -->
+            <div class="project-font">Tap Image to Explore</div>
+          </div>
+        </div>
+        <!-- <div id="pid4" class="pcls6 project-gap filter_item story">
+          <div class="title">
+              PERSONAL GOSPEL
+          </div>
+          <div class="sub-blk">
+            <img class="slash" src="../images/line.svg">
+            <div class="project-font">
+              <div>Interative Motion Graphics</div>
+              <div>Gospel Storytelling</div>
+              <div>Illustration, Storyboard</div>
+            </div>
+          </div>
+          <a href="onio.html">
+          <img id="p6-img-id" class="img-cls" src="../images/project/pg_gif_2.gif" alt="pg_gif_2">
+         </a>
+          <div class="expland-blk" style="padding-top: 15px;">
+            <img id="expandId4" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)">
+            <div class="project-font">
+              Tap to Explore
+            </div>
+          </div>
+        </div>
+        <div id="pid5" class="pcls3 project-gap filter_item story">
+          <div class="title">
+            Boat Film
+          </div>
+          <div class="sub-blk">
+            <img class="slash" src="../images/line.svg">
+            <div class="project-font">
+              <div>Immersive Experience</div>
+              <div>Mississippi Nature & Arts</div>
+              <div>Projection Mapping</div>
+            </div>
+          </div>
+          <a href="boat_film.html">
+          <img id="p3-img-id" class="img-cls" src="../images/project/boatFilm.png" alt="boatFilm">
+         </a>
+          <div class="expland-blk" style="padding-top: 15px;">
+            <img id="expandId5" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)">
+            <div class="project-font">
+              Tap to Explore
+            </div>
+          </div>
+        </div>
+        <div id="pid6" class="pcls2 project-gap filter_item digital">
+          <div class="title">
+            Music Creations
+          </div>
+          <div class="sub-blk">
+            <img class="slash" src="../images/line.svg">
+            <div class="project-font">
+              <div>Museum Interative</div>
+              <div>Music Games </div>
+              <div>Audio-Viz Interaction</div>
+            </div>
+          </div>
+          <a href="music.html">
+          <img id="p2-img-id" class="img-cls" src="../images/project/Jazz.gif" alt="Jazz">
+         </a>
+          <div class="expland-blk" style="padding-top: 15px;">
+            <img id="expandId6" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)">
+            <div class="project-font">
+              Tap to Explore
+            </div>
+          </div>
+        </div>
+        <div id="pid7" class="pcls7 project-gap filter_item story">
+          <div class="title">
+            Storytelling the blues
+          </div>
+          <div class="sub-blk">
+            <img class="slash" src="../images/line.svg">
+            <div class="project-font">
+              <div>Museum Interactive</div>
+              <div>Storytelling Blues Songs</div>
+              <div>Illustration, Storyboard</div>
+            </div>
+          </div>
+          <a href="blues.html">
+          <img id="p7-img-id" class="img-cls" src="../images/project/Blues.gif" alt="Blues">
+          </a>
+          <div class="expland-blk" style="padding-top: 15px;">
+            <img id="expandId7" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)">
+            <div class="project-font">
+              Tap to Explore
+            </div>
+          </div>
+        </div>
+        <div id="pid8" class="pcls8 project-gap filter_item web branding">
+          <div class="title">
+              Biolever
+          </div>
+          <div class="sub-blk">
+            <img class="slash" src="../images/line.svg">
+            <div class="project-font">
+              <div>Branding System</div>
+              <div>Probiotic Beverage </div>
+              <div>Brand, Packaging, UI/UX</div>
+            </div>
+          </div>
+          <a href="biolever.html">
+          <img id="p8-img-id" class="img-cls" src="../images/project/biolever-1.gif" alt="biolever-1">
+          </a>
+          <div class="expland-blk" style="padding-top: 15px;">
+            <img id="expandId8" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)">
+            <div class="project-font">
+              Tap to Explore
+            </div>
+          </div>
+        </div>
+        <div id="pid9" class="pcls9 project-gap filter_item branding">
+          <div class="title">
+            ONIO
+          </div>
+          <div class="sub-blk">
+            <img class="slash" src="../images/line.svg">
+            <div class="project-font">
+              <div>Concept Design</div>
+              <div>Cosmetics Brand Design</div>
+              <div>Branding, Packaging</div>
+            </div>
+          </div>
+          <a href="onio.html">
+          <img id="p9-img-id" class="img-cls" src="../images/project/onio.png" alt="onio">
+         </a>
+          <div class="expland-blk" style="padding-top: 15px;">
+            <img id="expandId9" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)">
+            <div class="project-font">
+              Tap to Explore
+            </div>
+          </div>
+        </div>
+        <div id="pid10" class="pcls10 project-gap filter_item branding">
+          <div class="title">
+            Read Beyond Headlines, Read Between the Lines
+          </div>
+          <div class="sub-blk">
+            </a>
+            <img class="slash" src="../images/line.svg">
+            <div class="project-font">
+              <div>Concept Design</div>
+              <div>New Online Reading Experience</div>
+              <div>Editoral, UI/UX, Poster</div>
+            </div>
+          </div>
+          <a href="read_beyond_headlines.html">
+          <img id="p10-img-id" class="img-cls" src="../images/project/Read-1@2x.png" alt="Read-1">
+         </a>
+          <div class="expland-blk" style="padding-top: 15px;">
+            <img id="expandId10" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)">
+            <div class="project-font">
+              Tap to Explore
+            </div>
+          </div>
+        </div>
+
+        <div id="pid11" class="pcls11 project-gap filter_item branding">
+          <div class="title">
+            Niravo
+          </div>
+          <div class="sub-blk">
+            </a>
+            <img class="slash" src="../images/line.svg">
+            <div class="project-font">
+              <div>Branding System</div>
+              <div>Healthcare & Well-being</div>
+              <div>Style Guide</div>
+            </div>
+          </div>
+          <a href="niravo.html">
+          <img id="p11-img-id" class="img-cls" src="../images/niravo/niravo-1@2x.png" alt="Read-1">
+         </a>
+          <div class="expland-blk" style="padding-top: 15px;">
+            <img id="expandId11" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)">
+            <div class="project-font">
+              Tap to Explore
+            </div>
+          </div>
+        </div>
+
+        <div id="pid12" class="pcls12 project-gap filter_item web">
+          <div class="title">
+           The St. Nichoals National Shrine Tour App
+          </div>
+          <div class="sub-blk">
+            </a>
+            <img class="slash" src="../images/line.svg">
+            <div class="project-font">
+              <div>Ongoing Project</div>
+              <div>Immersive Audio Tour</div>
+              <div>UI/UX, Web</div>
+            </div>
+          </div>
+          <a href="stnicholas.html">
+          <img id="p12-img-id" class="img-cls" src="../images/stnicholas/stnicholas-2@2x.png" alt="Read-1">
+         </a>
+          <div class="expland-blk" style="padding-top: 15px;">
+            <img id="expandId12" class="expand" src="../images/expand_icon.svg" alt="expand_icon" onclick="expandPage(this.id)">
+            <div class="project-font">
+              Tap to Explore
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="project-desktop">
+        <div id="pid1" class="filter_item web menu__item">
+          <div id="num1" class="menu-num">1.</div>
+          <a
+            id="p1"
+            class="menu__item-link"
+            href="/projects/fpl"
+            onmouseover="showNumber(this.id)"
+            onmouseout="hideNumber(this.id)"
+          >
+            <div>FPL</div>
+            <div>DATA ANALYSIS</div>
+            <div class="sub-blk" style="padding: 0; align-items: flex-start">
+              <div>PROJECT</div>
+              <img
+                class="slash"
+                src="{% static 'images/line.svg' %}"
+                style="padding: 7px 10px 0"
+              />
+              <div class="project-font" style="padding: 2px 0 0">
+                <div>Fantasy Premier League</div>
+                <div>Machine Learning</div>
+                <div>Data Analysis & Prediction</div>
+              </div>
+            </div>
+          </a>
+          <img
+            class="menu__item-img"
+            src="{% static 'images/fpl.png' %}"
+            alt="fpl analysis"
+          />
+        </div>
+
+        <div id="pid2" class="filter_item digital menu__item">
+          <div id="num2" class="menu-num">2.</div>
+          <a
+            id="p2"
+            class="menu__item-link"
+            href="https://dofften.pythonanywhere.com"
+            onmouseover="showNumber(this.id)"
+            onmouseout="hideNumber(this.id)"
+          >
+            <div>final year</div>
+            <div class="sub-blk" style="padding: 0; align-items: flex-start">
+              <div>project</div>
+              <img
+                class="slash"
+                src="{% static 'images/line.svg' %}"
+                style="padding: 7px 10px 0"
+              />
+              <div class="project-font" style="padding: 2px 0 0">
+                <div>Online Exams</div>
+                <div>Data Analytics</div>
+                <div>Data Visualization</div>
+              </div>
+            </div>
+          </a>
+          <img
+            class="menu__item-img"
+            src="{% static 'images/LOAS.png' %}"
+            alt="LOAS"
+          />
+        </div>
+        <div id="pid3" class="filter_item digital menu__item">
+          <div id="num3" class="menu-num">3.</div>
+          <a
+            id="p3"
+            class="menu__item-link"
+            href="https://www.youtube.com/watch?v=FPSaniNy7W8"
+            onmouseover="showNumber(this.id)"
+            onmouseout="hideNumber(this.id)"
+            target="_blank"
+          >
+            <div>Youtube</div>
+            <div>Developer</div>
+            <div class="sub-blk" style="padding: 0; align-items: flex-start">
+              <div>API</div>
+              <img
+                class="slash"
+                src="{% static 'images/line.svg' %}"
+                style="padding: 7px 10px 0"
+              />
+              <div class="project-font" style="padding: 2px 0 0">
+                <div>Dynamic Title</div>
+                <div>Dynamic Thumbnail</div>
+                <div>Update With Views & Likes</div>
+              </div>
+            </div>
+          </a>
+          <img
+            class="menu__item-img"
+            src="{% static 'images/youtube.png' %}"
+            alt="youtube api"
+          />
+        </div>
+        <!-- <div id="pid4" class="filter_item story menu__item">
+          <div id="num4" class="menu-num">4.</div>
+          <a id="p4" class="menu__item-link" href="personal_gospel.html" onmouseover="showNumber(this.id)" onmouseout="hideNumber(this.id)">
+            <div>Personal</div>
+            <div class="sub-blk" style="padding: 0; align-items:flex-start">
+              <div>Gospel</div>
+              <img class="slash" src="../images/line.svg" style="padding: 7px 10px 0;">
+              <div class="project-font" style="padding: 2px 0 0;">
+                <div>Interactive Motion Graphics</div>
+                <div>Gospel Storytelling</div>
+                <div>Illustration, Storyboard</div>
+              </div>
+            </div>
+          </a>
+          <img class="menu__item-img" src="../images/project/pg_gif_2.gif" alt="pg_gif_2"/>
+        </div>
+        <div id="pid5" class="filter_item story digital menu__item">
+          <div id="num5" class="menu-num">5.</div>
+          <a id="p5" class="menu__item-link" href="boat_film.html" onmouseover="showNumber(this.id)" onmouseout="hideNumber(this.id)">
+            <div class="sub-blk" style="padding: 0; align-items:flex-start">
+              <div>Boat film</div>
+              <img class="slash" src="../images/line.svg" style="padding: 7px 10px 0;">
+              <div class="project-font" style="padding: 2px 0 0;">
+                <div>Immersive Experience</div>
+                <div>Mississippi Nature & Arts</div>
+                <div>Projection Mapping</div>
+              </div>
+            </div>
+          </a>
+          <img class="menu__item-img" src="../images/project/boatFilm.png" alt="boatFilm"/>
+        </div>
+        <div id="pid6" class="filter_item digital menu__item">
+          <div id="num6" class="menu-num">6.</div>
+          <a id="p6" class="menu__item-link" href="music.html" onmouseover="showNumber(this.id)" onmouseout="hideNumber(this.id)">
+            <div>Music</div>
+            <div class="sub-blk" style="padding: 0; align-items:flex-start">
+              <div>Creations</div>
+              <img class="slash" src="../images/line.svg" style="padding: 7px 10px 0;">
+              <div class="project-font" style="padding: 2px 0 0;">
+                <div>Museum Interactive</div>
+                <div>Music Games</div>
+                <div>Audio-Viz Interaction</div>
+              </div>
+            </div>
+          </a>
+          <img class="menu__item-img" src="../images/project/Jazz.gif" alt="Jazz"/>
+        </div>
+        <div id="pid7" class="filter_item story menu__item">
+          <div id="num7" class="menu-num">7.</div>
+          <a id="p7" class="menu__item-link" href="blues.html" onmouseover="showNumber(this.id)" onmouseout="hideNumber(this.id)">
+            <div>Storytelling</div>
+            <div class="sub-blk" style="padding: 0; align-items:flex-start">
+              <div>the blues</div>
+              <img class="slash" src="../images/line.svg" style="padding: 7px 10px 0;">
+              <div class="project-font" style="padding: 2px 0 0;">
+                <div>Museum Interactive</div>
+                <div>Storytelling Blues Songs</div>
+                <div>Illustration, Storyboard</div>
+              </div>
+            </div>
+          </a>
+          <img class="menu__item-img" src="../images/project/Blues.gif" alt="Blues"/>
+        </div>
+        <div id="pid8" class="filter_item web branding menu__item">
+          <div id="num8" class="menu-num">8.</div>
+          <a id="p8" class="menu__item-link" href="biolever.html" onmouseover="showNumber(this.id)" onmouseout="hideNumber(this.id)">
+            <div class="sub-blk" style="padding: 0; align-items:flex-start">
+              <div>biolever</div>
+              <img class="slash" src="../images/line.svg" style="padding: 7px 10px 0;">
+              <div class="project-font" style="padding: 2px 0 0;">
+                <div>Branding System</div>
+                <div>Probiotic Beverage</div>
+                <div>Brand, Packaging, UI/UX</div>
+              </div>
+            </div>
+          </a>
+          <img class="menu__item-img" src="../images/project/biolever-1.gif" alt="biolever-1"/>
+        </div>
+        <div id="pid9" class="filter_item branding menu__item">
+          <div id="num9" class="menu-num">9.</div>
+          <a id="p9" class="menu__item-link" href="onio.html" onmouseover="showNumber(this.id)" onmouseout="hideNumber(this.id)">
+            <div class="sub-blk" style="padding: 0; align-items:flex-start">
+              <div>Onio</div>
+              <img class="slash" src="../images/line.svg" style="padding: 7px 10px 0;">
+              <div class="project-font" style="padding: 2px 0 0;">
+                <div>Concept Design</div>
+                <div>Cosmetic Brand Design</div>
+                <div>Branding, Packaging</div>
+              </div>
+            </div>
+          </a>
+          <img class="menu__item-img" src="../images/project/onio.png" alt="onio"/>
+        </div>
+        <div id="pid10" class="filter_item branding menu__item">
+          <div id="num10" class="menu-num">10.</div>
+          <a id="p10" class="menu__item-link" href="read_beyond_headlines.html" onmouseover="showNumber(this.id)" onmouseout="hideNumber(this.id)">
+            <div>Read Beyond</div>
+            <div>Headlines,</div>
+            <div>Read Between</div>
+            <div class="sub-blk" style="padding: 0; align-items:flex-start">
+              <div>the Lines</div>
+              <img class="slash" src="../images/line.svg" style="padding: 7px 10px 0;">
+              <div class="project-font" style="padding: 2px 0 0;">
+                <div>Concept Design</div>
+                <div>New Online Reading Experience</div>
+                <div>Editorial, UI/UX, Poster</div>
+              </div>
+            </div>
+          </a>
+          <img class="menu__item-img" src="../images/project/Read-1@2x.png" alt="Read-1"/>
+        </div>
+
+        <div id="pid11" class="filter_item branding menu__item">
+          <div id="num11" class="menu-num">11.</div>
+          <a id="p11" class="menu__item-link" href="niravo.html" onmouseover="showNumber(this.id)" onmouseout="hideNumber(this.id)">
+            <div class="sub-blk" style="padding: 0; align-items:flex-start">
+              <div>Niravo</div>
+              <img class="slash" src="../images/line.svg" style="padding: 7px 10px 0;">
+              <div class="project-font" style="padding: 2px 0 0;">
+                <div>Branding System</div>
+                <div>Healthcare & Well-being</div>
+                <div>Style Guide</div>
+              </div>
+            </div>
+          </a>
+          <img class="menu__item-img" src="../images/niravo/niravo-1@2x.png" alt="JnJ"/>
+        </div>
+
+        <div id="pid12" class="filter_item web menu__item">
+          <div id="num12" class="menu-num">12.</div>
+          <a id="p12" class="menu__item-link" href="stnicholas.html" onmouseover="showNumber(this.id)" onmouseout="hideNumber(this.id)">
+            <div>The St. Nicholas</div>
+            <div>National Shrine</div>
+            <div class="sub-blk" style="padding: 0; align-items:flex-start">
+              <div>Tour App</div>
+              <img class="slash" src="../images/line.svg" style="padding: 7px 10px 0;">
+              <div class="project-font" style="padding: 2px 0 0;">
+                <div>Ongoing Project</div>
+                <div>Immersive Audio Tour</div>
+                <div>UI/UX, Web Design</div>
+              </div>
+            </div>
+          </a>
+          <img class="menu__item-img" src="../images/stnicholas/stnicholas-2@2x.png" alt="JnJ"/>
+        </div> -->
+      </div>
+
+      <div class="footer">
+        <div class="social-media">
+          <!-- <a class="insta" href="https://www.instagram.com/dofften" target="_blank">Instagram</a> -->
+          <a class="insta" href="https://github.com/Dofften" target="_blank"
+            >Github</a
+          >
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/in/frederick-omondi-8643821b9/"
+            target="_blank"
+            >Linkedin</a
+          >
+          <!-- <a class="behance" href="https://www.twitter.com/dofften" target="_blank">Twitter</a> -->
+        </div>
+        <div class="zeright">&copy;Dofften 2022</div>
+      </div>
+    </div>
+
+    <div id="optionpage" class="optionpage-cls">
+      <div class="close-cls">
+        <img
+          id="closeId"
+          class="close-img"
+          src="{% static 'images/close-icon.png' %}"
+          onclick="closeOptions(this.id)"
+        />
+      </div>
+
+      <div class="option-title">
+        <a class="project" href="/projects">PROJECTS</a>
+        <a class="about" href="/about">ABOUT</a>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/project.js' %}"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/gsap.js' %}"></script>
+  </body>
+</html>

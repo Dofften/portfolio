@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <!-- website thumbnail -->
+    <meta property="og:title" content="Frank Omondi Portfolio Website" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frederick Frank Omondi</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
+    <link rel="stylesheet" href="https://use.typekit.net/ljn4kgu.css" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/footer.css' %}"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top-blk">
+        <div class="name">
+          <div id="myname" class="ze">
+            <a
+              class="cv_a"
+              target="_blank"
+              href="https://drive.google.com/file/d/18V3eMqM-FEn4K0GzLkWbDFZ9UdMuBakp/view?usp=sharing"
+              target="_blank"
+              >RESUME</a
+            >
+          </div>
+        </div>
+        <div class="loc-time">
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NRB:</span>
+          <span id="myClockDisplay" class="clock" onload="showTime()"></span>
+          <span>(EAT)</span>
+        </div>
+      </div>
+
+      <div class="cn">
+        <div class="main-body">
+          <div class="upper-cls">
+            FULL STACK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+          <div class="upper-cls">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEVELOPER
+          </div>
+          <div class="center-wrapper">
+            <div class="inner-wrapper">
+              <div class="block" data-fx="1">
+                <a
+                  class="block__title hov-cls"
+                  href="/about"
+                  data-img="{% static 'images/knowmore.png' %}"
+                  >FRANK&nbsp;OMONDI</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="upper-cls">
+            DATA SCIENTIST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+          <div class="upper-cls">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PYTHON&nbsp;PROGRAMMER
+          </div>
+          <div class="center-wrapper">
+            <div class="inner-wrapper graphic-design">
+              <div class="upper-cls">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+              <div class="block" data-fx="1">
+                <a
+                  class="block__title hov-cls"
+                  href="/projects"
+                  data-img="{% static 'images/projects.png' %}"
+                  >PROJECTS</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="upper-cls">&nbsp;&nbsp;</div>
+          <div class="upper-cls">&nbsp;&nbsp;</div>
+          <div class="upper-cls">&nbsp;&nbsp;</div>
+        </div>
+        <div class="exploreWrap">
+          <a href="/projects">
+            <button class="explore">EXPLORE</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="footerWrap">
+        <div class="footer">
+          <div class="social-media">
+            <!-- <a
+              class="insta"
+              href="https://www.instagram.com/dofften"
+              target="_blank"
+              >Instagram</a
+            > -->
+            <a class="insta" href="https://github.com/Dofften" target="_blank"
+              >Github</a
+            >
+            <a
+              class="linkedin"
+              href="https://www.linkedin.com/in/frederick-omondi-8643821b9/"
+              target="_blank"
+              >Linkedin</a
+            >
+            <!-- <a
+              class="behance"
+              href="https://www.twitter.com/dofften"
+              target="_blank"
+              >Twitter</a
+            > -->
+          </div>
+          <div class="zeright">&copy;dofften 2022</div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="{% static 'js/cover.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/charming.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/imagesloaded.pkgd.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/TweenMax.min.js' %}"
+    ></script>
+    <script type="text/javascript" src="{% static 'js/demo.js' %}"></script>
+  </body>
+</html>
