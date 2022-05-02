@@ -17,7 +17,7 @@
         <form class="p-3 mt-3" method="post">
             {% csrf_token %}
             <div class="form-field d-flex align-items-center"> <span class="far fa-user"></span> <input type="number" name="gameweek" id="userName" placeholder="Gameweek" min="1" max="38" required> </div>
-            <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="Secret Key" required> </div> <button class="btn mt-3">Generate</button>
+            <button class="btn mt-3">Generate</button>
             <div class="text-center mt-4" style="font-weight: 500; color: #c90808;"> {{ response }} </div>
         </form>
     </div>
