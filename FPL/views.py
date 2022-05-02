@@ -136,7 +136,6 @@ def fpl_admin(request):
     BASE_DIR = './FPL/'
     response = ""
     if request.method == 'POST':
-        if request.POST.get('password') == 'Dofurere':
             week = request.POST.get('gameweek')
             GW_fixtures = requests.get(f"https://fantasy.premierleague.com/api/fixtures?event={week}")
             GW_fixtures = GW_fixtures.json()
@@ -157,7 +156,5 @@ def fpl_admin(request):
             #######################
             response = "successfully generated!!!"
             return render(request, 'fpl_admin_success.html')
-        else:
-            response = 'Wrong Secret Key!'
     context = {"response": response}
     return render(request, 'fpl_admin.html', context)
