@@ -136,25 +136,25 @@ def fpl_admin(request):
     BASE_DIR = './FPL/'
     response = ""
     if request.method == 'POST':
-            week = request.POST.get('gameweek')
-            GW_fixtures = requests.get(f"https://fantasy.premierleague.com/api/fixtures?event={week}")
-            GW_fixtures = GW_fixtures.json()
-            # print(GW_fixtures)
-            ######fixtures data######
-            with open(BASE_DIR+'fpl/'+'fixtures.json', 'w') as fixtures:
-                listed_fixtures = json.dumps(GW_fixtures)
-                fixtures.write(listed_fixtures)
-            #########################
+        week = request.POST.get('gameweek')
+        GW_fixtures = requests.get(f"https://fantasy.premierleague.com/api/fixtures?event={week}")
+        GW_fixtures = GW_fixtures.json()
+        # print(GW_fixtures)
+        ######fixtures data######
+        with open(BASE_DIR+'fpl/'+'fixtures.json', 'w') as fixtures:
+            listed_fixtures = json.dumps(GW_fixtures)
+            fixtures.write(listed_fixtures)
+        #########################
 
-            #######player data##########
-            r = requests.get("https://fantasy.premierleague.com/api/bootstrap-static/")
-            json_data = r.json()
-            #####write to text#####
-            with open(BASE_DIR+'fpl/'+'response.json', "w") as f:
-                listed_data = json.dumps(json_data)
-                f.write(listed_data)
-            #######################
-            response = "successfully generated!!!"
-            return render(request, 'fpl_admin_success.html')
+        #######player data##########
+        r = requests.get("https://fantasy.premierleague.com/api/bootstrap-static/")
+        json_data = r.json()
+        #####write to text#####
+        with open(BASE_DIR+'fpl/'+'response.json', "w") as f:
+            listed_data = json.dumps(json_data)
+            f.write(listed_data)
+        #######################
+        response = "successfully generated!!!"
+        return render(request, 'fpl_admin_success.html')
     context = {"response": response}
     return render(request, 'fpl_admin.html', context)
